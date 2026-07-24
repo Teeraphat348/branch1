@@ -1,21 +1,35 @@
 <template>
-  <q-page class="flex flex-center">
-    <div class="column items-center">
-      <img
-        alt="Quasar logo"
-        src="~@/assets/quasar-logo-vertical.svg"
-        style="width: 200px; height: 200px"
-      />
+  <div class="q-pa-md">
+  <div class="q-gutter-md" style="max-width: 300px">
+    <q-input v-model="text" label="Standard" />
 
-      <q-btn
-        class="q-mt-md"
-        color="primary"
-        to="/second"
-        label="Go to Second Page"
-        no-caps
-      />
-    </div>
-  </q-page>
+    <q-input filled v-model="text" label="Filled" />
+
+    <q-input outlined v-model="text" label="Outlined" />
+
+    <q-input standout v-model="text" label="Standout" />
+
+    <q-input
+      standout="bg-teal text-white"
+      v-model="text"
+      label="Custom standout"
+    />
+
+    <q-input borderless v-model="text" label="Borderless" />
+
+    <q-input rounded filled v-model="text" label="Rounded filled" />
+
+    <q-input rounded outlined v-model="text" label="Rounded outlined" />
+
+    <q-input rounded standout v-model="text" label="Rounded standout" />
+
+    <q-input square filled v-model="text" label="Square filled" />
+
+    <q-input square outlined v-model="text" label="Square outlined" />
+
+    <q-input square standout v-model="text" label="Square standout" />
+  </div>
+</div>
 </template>
 
 <script setup>
